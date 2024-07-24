@@ -33,6 +33,7 @@ function App() {
     <div className="App">
       <h1>Contact Manager</h1>
       <div className="search-container">
+        {" "}
         <input
           type="text"
           placeholder="Search Contacts"

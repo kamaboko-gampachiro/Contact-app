@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import styles from "./ContactItem.module.css";
 
 function ContactItem({ contact, updateContact, deleteContact }) {
   const [isEditing, setIsEditing] = useState(false);
@@ -14,42 +13,38 @@ function ContactItem({ contact, updateContact, deleteContact }) {
   };
 
   return (
-    <li className={styles.contactItem}>
+    <li className="contactItem">
       {isEditing ? (
         <>
           <input
+            className="editingInput"
             type="text"
             value={name}
             onChange={(e) => setName(e.target.value)}
-            className={styles.editingInput}
-            placeholder="Name"
           />
           <input
+            className="editingInput"
             type="email"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
-            className={styles.editingInput}
-            placeholder="Email"
           />
           <input
-            type="tel"
+            className="editingInput"
+            type="text"
             value={mobile}
             onChange={(e) => setMobile(e.target.value)}
-            className={styles.editingInput}
-            placeholder="Mobile"
           />
           <input
+            className="editingInput"
             type="text"
             value={department}
             onChange={(e) => setDepartment(e.target.value)}
-            className={styles.editingInput}
-            placeholder="Department"
           />
-          <button className={styles.saveButton} onClick={handleUpdate}>
+          <button className="button saveButton" onClick={handleUpdate}>
             Save
           </button>
           <button
-            className={styles.cancelButton}
+            className="button cancelButton"
             onClick={() => setIsEditing(false)}
           >
             Cancel
@@ -69,18 +64,32 @@ function ContactItem({ contact, updateContact, deleteContact }) {
           <span>
             <strong>Department:</strong> {contact.department}
           </span>
-          <button
-            className={styles.saveButton}
-            onClick={() => setIsEditing(true)}
-          >
-            Edit
-          </button>
-          <button
-            className={styles.deleteButton}
-            onClick={() => deleteContact(contact.id)}
-          >
-            Delete
-          </button>
+          <div className="">
+            <button
+              className="button editButton"
+              onClick={() => setIsEditing(true)}
+            >
+              Edit
+            </button>
+            <button
+              className="button deleteButton"
+              onClick={() => deleteContact(contact.id)}
+            >
+              Delete
+            </button>
+            <button
+              className="button whatsappButton"
+              onClick={() => window.open(`https://wa.me/${mobile}`, "_blank")}
+            >
+              <i className="fab fa-whatsapp"></i>
+            </button>
+            <button
+              className="button gmailButton"
+              onClick={() => window.open(`mailto:${email}`, "_blank")}
+            >
+              <i className="far fa-envelope"></i>
+            </button>
+          </div>
         </>
       )}
     </li>

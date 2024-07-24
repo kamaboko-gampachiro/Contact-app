@@ -1,12 +1,21 @@
+html,
 body {
-  font-family: Arial, sans-serif;
+  height: 100%;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: Arial, sans-serif;
+  overflow-x: hidden; /* Prevent horizontal scroll */
+}
+
+body {
+  min-height: 1000vh; /* Ensure body height covers at least the viewport height */
   background: #f0f2f5
     url("https://static.vecteezy.com/system/resources/previews/009/302/810/non_2x/beautiful-forest-panoramic-realistic-wanderlust-background-landscape-dark-trees-pine-in-mist-design-mystery-fog-in-park-concept-nature-beauty-tourism-web-banner-free-vector.jpg")
     no-repeat center center fixed;
   background-size: cover;
+  background-attachment: fixed;
+  background-position: center; /* Ensure the background is centered */
 }
 
 .App {
@@ -21,7 +30,7 @@ body {
 h1 {
   font-size: 28px;
   margin-bottom: 20px;
-  color: #333;
+  color: #ffffff;
   text-align: center;
 }
 
@@ -45,6 +54,8 @@ button {
   cursor: pointer;
   font-size: 16px;
   transition: background-color 0.3s ease, transform 0.2s ease;
+  margin-right: 10px;
+  display: inline;
 }
 
 button:hover {
@@ -52,6 +63,9 @@ button:hover {
 }
 
 button.saveButton {
+  background-color: #28a745;
+}
+button.editButton {
   background-color: #28a745;
 }
 
@@ -75,6 +89,22 @@ button.deleteButton:hover {
   background-color: #c82333;
 }
 
+button.whatsappButton {
+  background-color: #25d366;
+}
+
+button.gmailButton {
+  background-color: #d14836;
+}
+
+button.whatsappButton:hover {
+  background-color: #1ebe57;
+}
+
+button.gmailButton:hover {
+  background-color: #c23321;
+}
+
 ul {
   list-style-type: none;
   padding: 0;
@@ -96,14 +126,39 @@ li span {
   color: #555;
 }
 
+.icon {
+  margin-left: 8px;
+}
+
 @media (max-width: 600px) {
   .App {
     padding: 15px;
   }
 
   button {
-    width: 100%;
     margin-top: 10px;
     margin-right: 0;
+    margin-right: 10px;
+  }
+  button.saveButton {
+    width: 30%;
+  }
+  button.editButton {
+    width: 30%;
+  }
+
+  button.cancelButton {
+    width: 30%;
+  }
+
+  button.deleteButton {
+    width: 35%;
+  }
+  button.whatsappButton {
+    width: 20%;
+  }
+
+  button.gmailButton {
+    width: 23%;
   }
 }
