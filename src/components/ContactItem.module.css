@@ -1,0 +1,43 @@
+.contactItem {
+  margin-top: 20px;
+
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.editingInput {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.saveButton {
+  background-color: #28a745;
+  margin-right: 10px;
+}
+
+.cancelButton {
+  background-color: #6c757d;
+}
+
+.deleteButton {
+  background-color: #dc3545;
+}
+
+.saveButton:hover {
+  background-color: #218838;
+}
+
+.cancelButton:hover {
+  background-color: #5a6268;
+}
+
+.deleteButton:hover {
+  background-color: #c82333;
+}

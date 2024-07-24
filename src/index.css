@@ -1,0 +1,109 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background: #f0f2f5
+    url("https://static.vecteezy.com/system/resources/previews/009/302/810/non_2x/beautiful-forest-panoramic-realistic-wanderlust-background-landscape-dark-trees-pine-in-mist-design-mystery-fog-in-park-concept-nature-beauty-tourism-web-banner-free-vector.jpg")
+    no-repeat center center fixed;
+  background-size: cover;
+}
+
+.App {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 8px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #333;
+  text-align: center;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"] {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin-bottom: 15px;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+button {
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  color: #ffffff;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+  transform: scale(1.05);
+}
+
+button.saveButton {
+  background-color: #28a745;
+}
+
+button.cancelButton {
+  background-color: #6c757d;
+}
+
+button.deleteButton {
+  background-color: #dc3545;
+}
+
+button.saveButton:hover {
+  background-color: #218838;
+}
+
+button.cancelButton:hover {
+  background-color: #5a6268;
+}
+
+button.deleteButton:hover {
+  background-color: #c82333;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  margin-bottom: 20px;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+li span {
+  display: block;
+  margin-bottom: 8px;
+  color: #555;
+}
+
+@media (max-width: 600px) {
+  .App {
+    padding: 15px;
+  }
+
+  button {
+    width: 100%;
+    margin-top: 10px;
+    margin-right: 0;
+  }
+}

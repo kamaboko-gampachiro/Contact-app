@@ -1,0 +1,49 @@
+/* Background for the entire app */
+.App {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 8px;
+  background: linear-gradient(
+    to right,
+    #2eaaae,
+    #e9ecef
+  ); /* Light gradient background */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Style for the form and search container */
+.search-container {
+  display: flex;
+  gap: 10px;
+  /* align-items: center; */
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.search-input {
+  flex: 1;
+  padding: 18px; /* Adjust padding if necessary */
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 16px;
+  line-height: ; /*Increase line height for better alignment */
+  background-color: #f1f3f5; /* Light grey background for input fields */
+}
+
+.search-button {
+  padding: 8px 16px; /* Adjust padding for smaller button height */
+  border: none;
+  border-radius: 4px;
+  background-color: #007bff; /* Blue button */
+  color: #ffffff;
+  cursor: pointer;
+  line-height: 1.5;
+  font-size: 14px; /* Smaller font size for reduced button height */
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.search-button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+  transform: scale(1.05);
+}
