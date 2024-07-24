@@ -9,7 +9,7 @@ body {
 }
 
 body {
-  min-height: 1000vh; /* Ensure body height covers at least the viewport height */
+  min-height: 100vh; /* Ensure body height covers at least the viewport height */
   background: #f0f2f5
     url("https://static.vecteezy.com/system/resources/previews/009/302/810/non_2x/beautiful-forest-panoramic-realistic-wanderlust-background-landscape-dark-trees-pine-in-mist-design-mystery-fog-in-park-concept-nature-beauty-tourism-web-banner-free-vector.jpg")
     no-repeat center center fixed;
